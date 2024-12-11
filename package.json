@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "prisma": {
-    "schema": "server/database/schema.prisma"
+    "schema": "server/database/schema.prisma",
+    "seed": "node server/database/seed.js"
   },
   "scripts": {
     "build": "nuxt build",
@@ -37,6 +38,8 @@
   "devDependencies": {
     "@prisma/client": "^6.0.1",
     "prisma": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.7.2",
     "vite-plugin-eslint2": "^5.0.3"
   }
