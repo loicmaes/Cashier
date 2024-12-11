@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "nuxt-mailer",
     "nuxt-scheduler",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/i18n",
   ],
   devtools: { enabled: true },
   app: {
@@ -44,6 +45,11 @@ export default defineNuxtConfig({
     families: {
       Montserrat: true,
     },
+  },
+  i18n: {
+    vueI18n: "./i18n.config.ts",
+    defaultLocale: "fr",
+    locales: ["fr"],
   },
   tailwindcss: {
     cssPath: ["assets/css/tailwind.css", { injectPosition: "first" }],
