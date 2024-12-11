@@ -4,7 +4,7 @@
   "type": "module",
   "prisma": {
     "schema": "server/database/schema.prisma",
-    "seed": "node server/database/seed.js"
+    "seed": "tsx server/database/seed.ts"
   },
   "scripts": {
     "build": "nuxt build",
@@ -21,6 +21,7 @@
     "@nuxtjs/google-fonts": "3.2.0",
     "@nuxtjs/i18n": "9.1.1",
     "@nuxtjs/tailwindcss": "6.12.2",
+    "@prisma/client": "^6.0.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "eslint": "^9.16.0",
@@ -36,10 +37,10 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@prisma/client": "^6.0.1",
+    "@types/node": "^22.10.2",
     "prisma": "^6.0.1",
-    "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vite-plugin-eslint2": "^5.0.3"
   }

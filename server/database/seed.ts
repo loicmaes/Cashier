@@ -2,8 +2,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-const wait = async delay => new Promise(resolve => setTimeout(resolve, delay));
-
+const wait = async (delay: number) => new Promise(resolve => setTimeout(resolve, delay));
 async function main() {
   console.log("🌱  Seeding database...");
   await wait(1000);
