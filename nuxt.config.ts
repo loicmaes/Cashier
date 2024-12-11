@@ -9,14 +9,25 @@ export default defineNuxtConfig({
     "nuxt-scheduler",
     "@nuxtjs/google-fonts",
   ],
+  devtools: { enabled: true },
   app: {
     head: {
       title: "Cashier, bienvenue",
     },
   },
-  devtools: { enabled: true },
   colorMode: {
     classSuffix: "",
+  },
+  runtimeConfig: {
+    mailerHost: "",
+    mailerPort: "",
+    mailerUser: "",
+    mailerPass: "",
+    mailerFromAddress: "",
+    mailerFromName: "",
+    public: {
+      apiUrl: "",
+    },
   },
   compatibilityDate: "2024-11-01",
   eslint: {
