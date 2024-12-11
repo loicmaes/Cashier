@@ -8,15 +8,27 @@ export default defineNuxtConfig({
     "nuxt-mailer",
     "nuxt-scheduler",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/i18n",
   ],
+  devtools: { enabled: true },
   app: {
     head: {
       title: "Cashier, bienvenue",
     },
   },
-  devtools: { enabled: true },
   colorMode: {
     classSuffix: "",
+  },
+  runtimeConfig: {
+    mailerHost: "",
+    mailerPort: "",
+    mailerUser: "",
+    mailerPass: "",
+    mailerFromAddress: "",
+    mailerFromName: "",
+    public: {
+      apiUrl: "",
+    },
   },
   compatibilityDate: "2024-11-01",
   eslint: {
@@ -33,6 +45,11 @@ export default defineNuxtConfig({
     families: {
       Montserrat: true,
     },
+  },
+  i18n: {
+    vueI18n: "./i18n.config.ts",
+    defaultLocale: "fr",
+    locales: ["fr"],
   },
   tailwindcss: {
     cssPath: ["assets/css/tailwind.css", { injectPosition: "first" }],
