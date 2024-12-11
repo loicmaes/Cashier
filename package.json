@@ -2,6 +2,9 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "prisma": {
+    "schema": "server/database/schema.prisma"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --host",
