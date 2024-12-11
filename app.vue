@@ -12,7 +12,9 @@ const iconProps = {
   <div>
     <NuxtRouteAnnouncer />
     <IconoirProvider :icon-props="iconProps">
-      <NuxtWelcome />
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </IconoirProvider>
   </div>
 </template>
